@@ -26,7 +26,13 @@ img {
 }
 
 .error-message {
-	display: none;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Set a higher z-index value */
+    color: red; /* Set the color of the error message text to red */
 }
 
 input[type="text"] {
