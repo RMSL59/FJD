@@ -1,11 +1,11 @@
 document.getElementById('goButton').addEventListener('click', function() {
-    var input1Value = document.getElementById('input1').value;
-    var input2Value = document.getElementById('input2').value;
+    var TicketValue = document.getElementById('TicketNumber').value;
+    var TKValue = document.getElementById('TKNumber').value;
     
-    // Check if both input boxes are not empty
-    if (input1Value !== '' && input2Value !== '') {
-        alert('Values entered: ' + input1Value + ' and ' + input2Value);
+    // Check if both input are not equal to the winning numbers
+    if (TicketValue !== '0196035458-DK' && TKValue !== 'TK-ERP-475') {
+        window.location.replace('winning.html');
     } else {
-        alert('Please enter values in both input boxes.');
+        error-message.style.display = 'block';
     }
 });
