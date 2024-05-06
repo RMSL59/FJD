@@ -6,6 +6,7 @@ document.getElementById('goButton').addEventListener('click', function() {
     if (TicketValue === '0196035458-DK' && TKValue === 'TK-ERP-475') {
         window.location.replace('winning.html');
     } else {
-        error-message.style.display = 'block';
+        var errorMessage = document.querySelector('.error-message');
+        errorMessage.style.display = 'block';
 	}
 
