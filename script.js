@@ -9,4 +9,4 @@ document.getElementById('goButton').addEventListener('click', function() {
         var errorMessage = document.querySelector('.error-message');
         errorMessage.style.display = 'block';
 	}
-
+});
