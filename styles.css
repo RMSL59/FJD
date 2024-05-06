@@ -26,7 +26,8 @@ img {
 }
 
 .error-message {
-	display: none
+	display: none;
+	color: red;
 }
 
 input[type="text"] {
