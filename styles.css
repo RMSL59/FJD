@@ -28,7 +28,7 @@ img {
 .error-message {
     display: none;
     position: absolute;
-    top: calc(100% + 40px); /* Position the error message below the input-container */
+    top: calc(100% + 10px); /* Position the error message below the input-container */
     left: 50%;
     transform: translateX(-50%);
     color: red; /* Set the color of the error message text to red */
