@@ -1,16 +1,16 @@
-document.getElementById('goButton').addEventListener('click', function() {
-    var TicketInput = document.getElementById('TicketNumber');
-    var TKInput = document.getElementById('TKnumber');
-    var TicketValue = TicketInput.value;
-    var TKValue = TKInput.value;
+function checkLogin() {
+    const ticketElement = document.getElementById("TicketNumber");
+    const tkElement = document.getElementById("TKnumber");
+    const errorMessage = document.getElementById("errorMsg");
+    const goButton = document.getElementById("goButton");
     
     // Check if both input are not equal to the winning numbers
-    if (TicketValue === '0196035458-DK' && TKValue === 'TK-ERP-475') {
-        window.location.replace('winning.html');
+    if (ticketElement.value === "0196035458-DK" && tkElement.value === "TK-ERP-475") {
+        goButton.setAttribute(href,"winning.html");
     } else {
-        var errorMessage = document.querySelector('.error-message');
-        errorMessage.style.display = 'block';
-		TicketInput.value = '';
-		TKInput.value = '';
+        errorMessage.setAttribute(style.display,"block");
+		tkElement.value = "";
+		ticketElement.value = "";
 	}
 });
+};
