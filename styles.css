@@ -12,16 +12,11 @@ img {
 }
 
 .input-container {
-    position: relative;
     text-align: center;
 }
 
 .error-message {
     display: none;
-    position: relative;
-    top: calc(100% + 10px); /* Position the error message below the input-container */
-    left: 50%;
-    transform: translateX(-50%);
     color: red; /* Set the color of the error message text to red */
 }
 
