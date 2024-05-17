@@ -14,7 +14,7 @@ img {
 .input-container {
     position: absolute;
     text-align: center;
-    margin: 5px auto;
+    margin: auto;
     border: solid 2px;
 }
 
