@@ -17,7 +17,7 @@ img {
     border: 2px solid;
     height: 40px;
     Width: 100px;
-    margin-top: (100%-20px)/2;
+    margin-top: (100%-40px)/2;
 }
 
 .error-message {
