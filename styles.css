@@ -15,7 +15,7 @@ img {
     position: absolute;
     text-align: center;
     margin: 0 auto;
-    border: solid 2px;
+    border: 2px solid;
 }
 
 .error-message {
