@@ -12,7 +12,7 @@ img {
 }
 
 .input-container {
-    position: absolute;
+    position: relative;
     text-align: center;
     border: 2px solid;
     width: 100%;
