@@ -13,7 +13,7 @@ img {
 }
 
 .input-container {
-    position: relative;
+    position: absolute;
     text-align: center;
     border: 2px solid;
 }
