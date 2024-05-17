@@ -14,8 +14,8 @@ img {
 .input-container {
     position: absolute;
     text-align: center;
-    top: 50%;
     margin: 5px auto;
+    border: solid 2px;
 }
 
 .error-message {
