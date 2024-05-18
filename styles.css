@@ -23,7 +23,7 @@ img {
 
 .input-container {
     position: absolute;
-    top: 50%; /* Center the container vertically */
+    top: 47.5%; /* Center the container vertically */
     left: 50%; /* Center the container horizontally */
     transform: translate(-50%, -50%); /* Adjust for the container's own dimensions */
     text-align: center;
@@ -51,6 +51,7 @@ button {
     cursor: pointer;
     width: 100%; /* Make button take full width of the container */
     margin-top: 10px; /* Add margin for spacing */
+    font-weight: bold;
 }
 
 button:hover {
@@ -63,4 +64,21 @@ button:hover {
     margin-top: 10px; /* Add margin for spacing */
     font-size: 14px; /* Adjust font size for readability on small screens */
 }
-Explanation
+
+.perdu {
+    color: white; /* Couleur du texte rouge */
+    font-size: 36px; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    margin-bottom: 5px; /* Adjust margin to reduce space */
+}
+
+.input-perdu {
+    position: absolute;
+    top: 42.5%; /* Center the container vertically */
+    left: 50%; /* Center the container horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the container's own dimensions */
+    text-align: center;
+    border-radius: 10px;
+    width: 80%; /* Ensure the input container is not too wide on small screens */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
