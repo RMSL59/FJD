@@ -19,6 +19,7 @@ img {
     position: absolute; /* Absolutely positioned within the container */
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .input-container {
@@ -81,4 +82,35 @@ button:hover {
     border-radius: 10px;
     width: 80%; /* Ensure the input container is not too wide on small screens */
     box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Style for the money elements */
+.money {
+    position: absolute;
+    width: 50px; /* Adjust width according to your money image size */
+    height: 50px; /* Adjust height according to your money image size */
+    background-image: url('https://image.similarpng.com/very-thumbnail/2020/09/3D-gold-coin-euro-clipart-PNG.png'); /* URL of your money image */
+    background-size: cover;
+    animation: fall 5s linear infinite; /* Animation */
+    z-index: 1;
+}
+
+/* Keyframes for the falling animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg); /* Start off the screen and not rotated */
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg); /* End off the screen and rotate a full circle */
+    }
+}
+
+.image-gagne img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the image behind the money elements */
 }
