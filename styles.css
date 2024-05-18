@@ -12,7 +12,7 @@ html, body {
     overflow: hidden; /* Ensure the content inside doesn't overflow */
 }
 
-img {
+.main {
     width: 100%;
     height: 100%;
     object-fit: contain; /* Ensure the entire image is visible */
@@ -89,7 +89,7 @@ button:hover {
     position: absolute;
     width: 50px; /* Adjust width according to your money image size */
     height: 50px; /* Adjust height according to your money image size */
-    background-image: url('https://image.similarpng.com/very-thumbnail/2020/09/3D-gold-coin-euro-clipart-PNG.png'); /* URL of your money image */
+    background-image: url('https://raw.githubusercontent.com/RMSL59/FJD/main/money.png'); /* URL of your money image */
     background-size: cover;
     animation: fall 5s linear infinite; /* Animation */
     z-index: 1;
@@ -113,4 +113,24 @@ button:hover {
     top: 0;
     left: 0;
     z-index: -1; /* Place the image behind the money elements */
+}
+
+.gagnetext {
+    position: absolute;
+    top: 42.5%; /* Center the container vertically */
+    left: 50%; /* Center the container horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the container's own dimensions */
+    text-align: center;
+    margin-top: 850px;
+    border-radius: 10px;
+    width: 80%; /* Ensure the input container is not too wide on small screens */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.second {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the entire image is visible */
+    top: 0;
+    left: 0;
 }
