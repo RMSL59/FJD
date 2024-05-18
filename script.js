@@ -19,7 +19,7 @@ function checkLogin() {
     }
 
     // Check if both inputs are equal to the winning numbers
-    if (ticketElement.value === "0196035458-DK" && tkElement.value === "TK-ERP-475") {
+    if (ticketElement.value === "0196035458-DK" && tkElement.value === "ERP-475") {
         window.location.href = 'winning.html';
     } else {
         window.location.href = 'losing.html';
