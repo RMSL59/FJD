@@ -2,7 +2,7 @@
 .image-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh; /* Use viewport height to ensure it covers the full screen */
     border: 2px solid red;
 }
 
@@ -10,19 +10,21 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
+    position: absolute; /* Change to absolute to cover the container fully */
+    top: 0;
+    left: 0;
     border: 2px solid green;
 }
 
 .input-container {
     position: absolute;
+    top: 50%; /* Center the container vertically */
+    left: 50%; /* Center the container horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the container's own dimensions */
     text-align: center;
     border: 2px solid;
-}
-
-.error-message {
-    display: none;
-    color: red;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 input[type="text"] {
