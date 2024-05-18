@@ -1,15 +1,22 @@
+/* Ensure the html and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
 .image-container {
     position: relative;
     width: 100%;
     height: 100vh; /* Use viewport height to ensure it covers the full screen */
+    overflow: hidden; /* Ensure the content inside doesn't overflow */
 }
 
 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    position: absolute; /* Change to absolute to cover the container fully */
+    object-fit: contain; /* Ensure the entire image is visible */
+    position: absolute; /* Absolutely positioned within the container */
     top: 0;
     left: 0;
 }
@@ -20,14 +27,19 @@ img {
     left: 50%; /* Center the container horizontally */
     transform: translate(-50%, -50%); /* Adjust for the container's own dimensions */
     text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%; /* Ensure the input container is not too wide on small screens */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 input[type="text"] {
-    width: 200px;
+    width: 100%; /* Make input fields take full width of the container */
     padding: 10px;
-    margin: 5px;
+    margin: 5px 0; /* Adjust margin for better spacing on small screens */
     border-radius: 5px;
     border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 button {
@@ -37,8 +49,18 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%; /* Make button take full width of the container */
+    margin-top: 10px; /* Add margin for spacing */
 }
 
 button:hover {
     background-color: #0056b3;
 }
+
+#errorMsg {
+    display: none;
+    color: red;
+    margin-top: 10px; /* Add margin for spacing */
+    font-size: 14px; /* Adjust font size for readability on small screens */
+}
+Explanation
